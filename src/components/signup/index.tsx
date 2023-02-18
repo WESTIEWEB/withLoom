@@ -12,7 +12,6 @@ import { SignupContainer, SignupForm, signUpStyles } from './styles';
 import { useGlobalContext } from '../../utils/context';
 import { Props } from '../../pages/Register';
 
-
 const Signup = () => {
     //Setting state variables for email and password
     const [email , setEmail] = useState('');
@@ -20,7 +19,7 @@ const Signup = () => {
     const [isDisabled, setIsDisabled] = useState(true);
 
     //calling states from global context
-    // const { showLoginForm,showLogin, showSignUp, showSignupForm } = useGlobalContext() as Props;
+    const { showSignUp } = useGlobalContext() as Props;
 
     const navigate = useNavigate();
 
@@ -47,7 +46,7 @@ const Signup = () => {
         if(userCredential){
           toast.success('Accout created successfully');
           setTimeout(() => {
-            navigate('/login')
+            navigate('/')
           },1000)
             console.log('sign up successful');
         }

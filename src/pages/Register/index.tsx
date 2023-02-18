@@ -60,6 +60,7 @@ export interface Props {
   showSignupForm: () => void;
   showLogin: boolean;
   showSignUp: boolean;
+  Register: (email:string, password:string) => void
 
 }
 

@@ -25,6 +25,7 @@ const AppContextProvider = ({children}: AppContextProviderProps) => {
       setShowLogin(false);
       console.log("showSignup :",showSignUp,"showSignin :", showLogin)
   }
+  
   return (
     <AppContext.Provider 
       value={{

@@ -7,6 +7,7 @@ import AppContextProvider from './utils/context';
 import SignUp from './components/signup';
 import Login from './components/login';
 import SiteAccess from './pages/Register';
+import { ProtectUserRoute } from './auth/protectRoute';
 
 const theme = createTheme({
   palette: {
@@ -25,6 +26,11 @@ const App = () => {
             <Routes>
               <Route path="/" element={<SiteAccess />} />
               <Route path="/signup" element={<SignUp />} />
+              <Route path="/login" element={
+                <ProtectUserRoute>
+                  <></>
+                </ProtectUserRoute>
+              } />
             </Routes>
           </Router>
         </ThemeProvider>
