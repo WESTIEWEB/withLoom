@@ -80,6 +80,7 @@ const Login = () => {
             <LoginForm onSubmit={handleLoginSubmit}>
                 <Box>
                     <TextField 
+                        className={loginClasses.textarea}
                         type='email' 
                         value={email} 
                         fullWidth 
@@ -91,6 +92,7 @@ const Login = () => {
                 </Box>
                 <Box>
                     <TextField
+                        className={loginClasses.textarea}
                         type='password' 
                         fullWidth 
                         value={password}
@@ -100,7 +102,7 @@ const Login = () => {
                         onChange={handlePasswordChange}
                     />
                 </Box>
-                <Box>
+                <Box className={loginClasses.btn}>
                     <Button disabled={isDisabled} className={`${isDisabled && loginClasses.inactive} ${loginClasses.loginBtn}`} type='submit'>
                         Login
                     </Button>

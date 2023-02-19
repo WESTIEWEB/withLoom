@@ -10,21 +10,28 @@ const useStyles = makeStyles((theme) => ({
     display: 'grid',
     placeItems: 'center',
     width: '100%',
-    gap: '1rem',
+    height: '60vh',
+    marginTop: '10%',
+    // gap: '1rem',
+    backgroundColor: '#f5f5f5',
   },
   box2: {
-    display: 'grid',
-    placeItems: 'center',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'flex-end',
+    // placeItems: 'center',
+    alignItems: 'center',
     width: '80%',
-    marginBottom: '2.5rem',
+    marginBottom: '0.5em',
   },
   box3: {
     marginTop: '1rem',
     display: 'flex',
     justifyContent: 'space-between',
     // alignItems: 'center',
+    borderRadius: '0.5em 0.5em 0 0',
     width: '50%',
-    padding: '0.5em 0.5em 0 0.5em',
+    padding: '0.9em 0.5em 0 0.5em',
     boxShadow: '0 0 10px 0 rgba(0,0,0,0.2)',
   },
   underlined: {
@@ -33,13 +40,13 @@ const useStyles = makeStyles((theme) => ({
 }))
 
 const LoginSpan = styled('span')({
-  color: '#000',
+  color: '#0000e6',
   textAlign: 'end',
   fontSize: '1.2rem',
   fontFamily: 'sans-serif',
   fontWeight: 'bold',
   cursor: 'pointer',
-  width: '20%',
+  width: '40%',
   marginTop: '0.5rem',
   display: 'inline-block',
 })
@@ -52,7 +59,7 @@ const SignUpSpan = styled('span')({
   cursor: 'pointer',
   marginTop: '0.5rem',
   display: 'inline-block',
-  width: '30%',
+  width: '40%',
 })
 
 export interface Props {

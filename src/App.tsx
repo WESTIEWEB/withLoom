@@ -8,6 +8,11 @@ import SignUp from './components/signup';
 import Login from './components/login';
 import SiteAccess from './pages/Register';
 import { ProtectUserRoute } from './auth/protectRoute';
+import Home from './components/Home';
+import Header from './components/Header';
+import Footer from './components/Footer/Footer';
+import ExchangeRateCalculator from './components/ExchangeCalculator';
+import CoinList from './components/Coins';
 
 const theme = createTheme({
   palette: {
@@ -22,17 +27,22 @@ const App = () => {
       <AppContextProvider>
         <ThemeProvider theme={theme}>
           <ToastContainer />
+          <Header />
           <Router>
             <Routes>
-              <Route path="/" element={<SiteAccess />} />
+              <Route path="/access" element={<SiteAccess />} />
+              <Route path="/exchange" element={<ExchangeRateCalculator />} />
+              <Route path="/coins" element={<CoinList />} />
               <Route path="/signup" element={<SignUp />} />
               <Route path="/login" element={
                 <ProtectUserRoute>
                   <></>
                 </ProtectUserRoute>
               } />
+              <Route path="/" element={  <Home /> } />
             </Routes>
           </Router>
+          <Footer />
         </ThemeProvider>
       </AppContextProvider>
     </React.Fragment>

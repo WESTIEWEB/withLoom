@@ -74,6 +74,7 @@ const Signup = () => {
         <SignupForm onSubmit={handleSubmit}>
           <Box>
               <TextField 
+                  className={signupClasses.textarea}
                   type='email' 
                   value={email} 
                   fullWidth 
@@ -85,6 +86,7 @@ const Signup = () => {
           </Box>
           <Box>
               <TextField
+                  className={signupClasses.textarea}
                   type='password' 
                   fullWidth 
                   value={password}

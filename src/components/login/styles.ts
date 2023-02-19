@@ -9,23 +9,34 @@ export const useStyles = makeStyles((theme) => ({
     justifyContent: 'center',
     alignItems: 'center',
   },
+  btn:{
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    width: '100%',
+  }
+  ,
   loginBtn: {
     width: '100%',
     padding: '0 !important',
-    backgroundColor: '#3300cc !important',
+    backgroundColor: '#000d1a !important',
     height: '4rem',
-    color: '#fff',
+    color: '#fff !important',
+    fontSize: '1.5rem !important',
+    fontWeight: 'bold',
+    fontFamily: 'Manrope',
     cursor: 'pointer',
     pointerEvents: 'auto',
     '& :hover': {
-      boxShadow: '0 0 0 0.2rem rgba(0,123,255,.5)',
+      // boxShadow: '0 0 0 0.2rem rgba(122,123,255,0.5)',
       padding: '0 !important',
-      outline: 'none !important',
       border: 'none !important',
+      background: 'gray',
       margin: '0 !important',
-      lineHeight: '4 !important',
+      lineHeight: '2.5em !important',
       boxSizing: 'border-box !important',
-      color: '#000',
+      outline: 'none',
+      color: '#fff',
     }
   },
   showModal: {
@@ -37,6 +48,14 @@ export const useStyles = makeStyles((theme) => ({
     '& span': {
       display: 'inline-block',
       width: '20%'
+    }
+  },
+  textarea:{
+    fontSize: '0.8rem !important',
+    fontFamily: 'sans-serif',
+    color: "#fff",
+    '& input': {
+      fontSize: '1.5rem !important',
     }
   },
   underlined:{

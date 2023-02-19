@@ -63,20 +63,23 @@ export const signUpStyles = makeStyles((theme) => ({
   submitBtn: {
     width: '100%',
     padding: '0 !important',
-    backgroundColor: '#3300cc !important',
+    backgroundColor: '#000d1a !important',
     height: '4rem',
-    color: '#fff',
+    color: '#fff !important',
+    fontSize: '1.5rem !important',
+    fontWeight: 'bold',
+    fontFamily: 'Manrope',
     cursor: 'pointer',
     pointerEvents: 'auto',
     '& :hover': {
-      boxShadow: '0 0 0 0.2rem rgba(0,123,255,.5)',
-      padding: '0 !important',
-      outline: 'none !important',
-      border: 'none !important',
-      margin: '0 !important',
-      lineHeight: '4 !important',
-      boxSizing: 'border-box !important',
-      color: '#000',
+        padding: '0 !important',
+        border: 'none !important',
+        background: 'gray',
+        margin: '0 !important',
+        lineHeight: '2.5em !important',
+        boxSizing: 'border-box !important',
+        outline: 'none',
+        color: '#fff',
     }
   },
   showModal: {
@@ -88,6 +91,13 @@ export const signUpStyles = makeStyles((theme) => ({
     '& span': {
       display: 'inline-block',
       width: '20%'
+    }
+  },
+  textarea:{
+    fontSize: '0.8rem',
+    fontFamily: 'sans-serif',
+    '& input': {
+        fontSize: '1.5rem !important',
     }
   },
   underlined:{
