@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { coinStyles } from "./styles";
 import Box from '@material-ui/core/Box';
-import Search from '../search/index';
 import {BsSearch as SearchIcon} from "react-icons/bs";
 import IconButton from '@material-ui/core/IconButton'
 import TextField from '@material-ui/core/TextField';
