@@ -6,9 +6,10 @@
 body{
   padding: 0;
   margin: 0;
-  background-color: #FFF;
-  font-family: 'Open sans', 'Manrope', sans-serif;
-  font-weight: normal;
+  background-color: rgb(242, 240, 245);
+  font-family: sans-serif, 'Open sans', 'Manrope';
+  font-weight: 100;
+  font-style: normal;
   
 }
 

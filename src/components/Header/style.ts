@@ -80,10 +80,12 @@ export const headerStyles = makeStyles((theme) => ({
         
       },
     closeMenu:{
-        marginTop: '3.8em',
         width: '40%',
         position: 'absolute',
+        zIndex:  2000,
+        margin: '1.5em',
         color: '#000',
+        top:'0',
         background:'transparent !important',
         
     },

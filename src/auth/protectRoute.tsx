@@ -16,7 +16,7 @@ export const ProtectUserRoute = ({children}: ProtectRouteProps) => {
 
     // If the user is not logged in, redirect to the login page
     if(!user || !token) {
-        return <Navigate to="/" state={{from: location.pathname}} />
+        return <Navigate to="/access" state={{from: location.pathname}} />
     }
 
     return children

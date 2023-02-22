@@ -1,10 +1,11 @@
 import React from 'react'
 import { ContainerD, HomeContent, homeStyles, BackgroundImg, MainContainer } from './styles';
 import { Box, Typography } from '@material-ui/core'
-import bgimg from '../../assets/bg.png'
+import bgimg from '../../assets/bg.svg'
 import Card from '../Card';
 import { apiGet } from '../../utils/axios/axios';
 import { useGlobalContext } from '../../utils/context';
+import Footer from '../Footer/Footer';
 
 interface ContexProps{
   loading: boolean;
@@ -51,6 +52,7 @@ const Home = () => {
         </MainContainer>
       </HomeContent>
     </ContainerD>
+    <Footer />
     </>
   )
 }

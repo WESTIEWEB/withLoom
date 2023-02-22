@@ -63,7 +63,7 @@ export const signUpStyles = makeStyles((theme) => ({
   submitBtn: {
     width: '100%',
     padding: '0 !important',
-    backgroundColor: '#000d1a !important',
+    backgroundColor: '#6f92e8 !important',
     height: '4rem',
     color: '#fff !important',
     fontSize: '1.5rem !important',
@@ -115,7 +115,7 @@ export const signUpStyles = makeStyles((theme) => ({
 export const SignupForm = styled('form')({
     display: 'flex',
     flexDirection: 'column',
-    width: '50%',
+    width: '100%',
     height: '100%',
     gap:  '0.8em',
     '@media (max-width: 600px)': {
@@ -128,5 +128,5 @@ export const SignupContainer = styled('div')({
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
-    width: '80%',
+    width: '100%',
 })

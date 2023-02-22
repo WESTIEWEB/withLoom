@@ -46,7 +46,7 @@ const Login = () => {
                 localStorage.setItem('token', token);
                 localStorage.setItem('email', userCredential?.user?.email!);
                 setTimeout(() => {
-                    navigate('/dashboard')
+                    navigate('/coins')
                 },1000)
 
                 console.log('Login successful');

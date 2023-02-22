@@ -7,7 +7,7 @@ const Footer = () => {
     const footerClasses = footerStyles();
   return (
     <Box className={footerClasses.footerMain}>
-        <Box display={'flex'} flexDirection={'column'} justifyContent={'center'} width={'100%'} alignItems={'center'}>
+        <Box display={'flex'} height={'100%'} flexDirection={'column'} justifyContent={'center'} width={'100%'} alignItems={'center'}>
             <FooterContainer>
                 <FooterMenu>
                     <UlItems>
@@ -56,7 +56,7 @@ const Footer = () => {
             </FooterContainer>
             <Box display={'grid'} width={'80%'} justifyContent={'center'} padding={'1em'} >
                 <Typography variant='h6'>
-                        copyright
+                        copyrights &copy; 2023, All rights reserved.
                 </Typography>
             </Box>
         </Box>

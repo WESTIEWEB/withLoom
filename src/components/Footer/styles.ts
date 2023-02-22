@@ -6,8 +6,9 @@ export const footerStyles = makeStyles((theme) => ({
         bottom: '0',
         display: 'block',
         width: '100%',
-        height: 'auto',
-        margin: 'auto'
+        height: '20em',
+        margin: 'auto',
+        background: '#e0e0e0'
     },
     liItems: {
         color: '#000 !important',

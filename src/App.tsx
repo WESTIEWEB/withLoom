@@ -11,7 +11,7 @@ import { ProtectUserRoute } from './auth/protectRoute';
 import Home from './components/Home';
 import Header from './components/Header';
 import Footer from './components/Footer/Footer';
-import ExchangeRateCalculator from './components/ExchangeCalculator';
+import ExchangeRateCalculator from './pages/ExchangeCalculator';
 import CoinList from './components/Coins';
 
 const theme = createTheme({
@@ -31,18 +31,13 @@ const App = () => {
           <Router>
             <Routes>
               <Route path="/access" element={<SiteAccess />} />
-              <Route path="/exchange" element={<ExchangeRateCalculator />} />
-              <Route path="/coins" element={<CoinList />} />
-              <Route path="/signup" element={<SignUp />} />
-              <Route path="/login" element={
-                <ProtectUserRoute>
-                  <></>
-                </ProtectUserRoute>
-              } />
+              {/* <Route path="/exchange" element={<ExchangeRateCalculator />} /> */}
+              <Route path="/coins" element={<ProtectUserRoute> <CoinList /></ProtectUserRoute>} />
+              <Route path="/exchange" element={<ProtectUserRoute> <ExchangeRateCalculator /></ProtectUserRoute>} /> 
               <Route path="/" element={  <Home /> } />
             </Routes>
           </Router>
-          <Footer />
+          {/* <Footer /> */}
         </ThemeProvider>
       </AppContextProvider>
     </React.Fragment>

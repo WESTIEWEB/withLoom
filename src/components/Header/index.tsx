@@ -58,19 +58,19 @@ const Header = () => {
                 </MenuList>
                 <MenuList style={{display:'flex', justifyContent:'flex-end'}}>
                     {
-                    !access && <MenuItem className={headerClasses.loginBtn}>
+                    !access?( 
+                    <MenuItem className={headerClasses.loginBtn}>
                         <Link className={headerClasses.a} href='/access'>
                             Login
                         </Link>
                     </MenuItem>
-                    }
-                   {
-                     access && 
+                    ):( 
                      <MenuItem onClick={logout} className={headerClasses.loginBtn}>
                         <Link className={headerClasses.a} href='/access'>
                             Logout
                         </Link>
                     </MenuItem>
+                    )
                     }
                 </MenuList>
             </Box>
@@ -95,17 +95,17 @@ const Header = () => {
                 open={open}
                 >
                     <MenuItem onClick={handleClose} className={`${headerClasses.trabsparentView}`}>
-                        <Link className={`${headerClasses.trabsparentView}`} href="/login">News</Link>
+                        <Link className={`${headerClasses.trabsparentView}`} href="#">Rates</Link>
                     </MenuItem>
                     <MenuItem onClick={handleClose}>
                         <Link href="/coins" className={`${headerClasses.trabsparentView}`}>Coins</Link>
                     </MenuItem>
                     <MenuItem onClick={handleClose}>
-                        <Link href="/exchange-rates" className={`${headerClasses.trabsparentView}`}>Exchange</Link>
+                        <Link href="/exchange" className={`${headerClasses.trabsparentView}`}>Exchange</Link>
                     </MenuItem>
                     {!access &&<MenuItem onClick={handleClose}>
                         
-                        <Link href="/login" 
+                        <Link href="/access" 
                             className={`${headerClasses.trabsparentView}`}>
                             Login
                         </Link>
