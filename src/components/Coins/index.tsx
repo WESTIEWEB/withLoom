@@ -56,7 +56,7 @@ const CoinList = () => {
     setSearchTerm(event.target.value);
     setSelctedTerm(event.target.value);
   }; 
-  const handleSearch = (event:React.ChangeEvent<HTMLInputElement>) => {
+  const handleSearch = (event:any) => {
     setSearchTerm(event.target.value);
   };
  
@@ -94,7 +94,7 @@ const CoinList = () => {
       </Box>
       <label className={coinClasses.label}>
         {/* <span >Filter: </span> */}
-        <select className={coinClasses.select} value={selctedTerm} onChange={handleFilter}>
+        <select className={coinClasses.select} value={selctedTerm} onChange={handleSearch}>
             {coinOpt.splice(0,10).map((ele) => 
                 <option key={ele} value={ele}>{ele}</option>
             )}
