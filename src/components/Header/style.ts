@@ -83,7 +83,7 @@ export const headerStyles = makeStyles((theme) => ({
         width: '40%',
         position: 'absolute',
         zIndex:  2000,
-        margin: '1.5em',
+        margin: '2.5em',
         color: '#000',
         top:'0',
         background:'transparent !important',
