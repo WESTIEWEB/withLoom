@@ -26,6 +26,7 @@ const Login = () => {
     const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setEmail(e.target.value);
     }
+    console.log(email)
 
     //A fuction that handle password input change
     const handlePasswordChange = (e: React.ChangeEvent<HTMLInputElement>) => {
